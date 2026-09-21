@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #aad0ab;
+  --color-primary-container: #395a3d;
+  --color-on-primary: #27472c;
+  --color-on-primary-container: #c7edc7;
+  --color-primary-fixed: #c6ecc6;
+  --color-on-primary-fixed: #26462b;
+  --color-primary-fixed-dim: #b8deb9;
+  --color-on-primary-fixed-variant: #426345;
+  --color-inverse-primary: #456749;
+
+  --color-secondary: #b8ccb6;
+  --color-secondary-container: #2e402f;
+  --color-on-secondary: #334434;
+  --color-on-secondary-container: #b1c5af;
+  --color-secondary-fixed: #d4e8d1;
+  --color-on-secondary-fixed: #324433;
+  --color-secondary-fixed-dim: #c6dac3;
+  --color-on-secondary-fixed-variant: #4e604e;
+
+  --color-tertiary: #f6ffbe;
+  --color-tertiary-container: #e8f1b0;
+  --color-on-tertiary: #5b6330;
+  --color-on-tertiary-container: #535b29;
+  --color-tertiary-fixed: #ebf4b3;
+  --color-tertiary-fixed-dim: #dce5a5;
+  --color-on-tertiary-fixed: #434a1a;
+  --color-on-tertiary-fixed-variant: #5f6733;
+
+  --color-surface: #0b0f0b;
+  --color-surface-dim: #0b0f0b;
+  --color-surface-bright: #262e26;
+  --color-surface-variant: #202820;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #101510;
+  --color-surface-container: #151b15;
+  --color-surface-container-high: #1b211b;
+  --color-surface-container-highest: #202820;
+
+  --color-on-surface: #e0e8dc;
+  --color-on-surface-variant: #a5ada3;
+  --color-outline: #70786e;
+  --color-outline-variant: #424a41;
+
+  --color-background: #0b0f0b;
+  --color-on-background: #e0e8dc;
+
+  --color-error: #f97758;
+  --color-error-container: #85230a;
+  --color-on-error: #450900;
+  --color-on-error-container: #ff9b82;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin: 1.25rem;
+  --spacing-gutter: 1rem;
+}
+
+@layer base {
+  html, body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0b0f0b;
+    color: #e0e8dc;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom utility typography mappings for seamless class compatibility */
+.text-headline-xl {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+.text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.text-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.text-label-sm {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.text-body-lg {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.text-body-sm {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}

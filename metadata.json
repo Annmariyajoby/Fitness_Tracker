@@ -1,0 +1,6 @@
+{
+  "name": "FitMove",
+  "description": "Comprehensive fitness, workout, diet, hydration, and health tracking dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
